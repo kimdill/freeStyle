@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+/* .h1{
+color:blue;
+}
+h1.h1{
+color:red;
+}
+
+nav[id]{
+color:gold;
+}
+nav[id="deeppink"]{
+color:deeppink;
+}
+#main-menu{
+color:orange;
+}
+input[type="submit"]
+{
+font-weight:bold;
+} */
+
+#lecture-search-form input[type="text"]{
+	color: red;
+	font-weight: bold;
+}
