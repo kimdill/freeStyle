@@ -270,6 +270,12 @@ width: 60px;
 #notice th:FIRST-CHILD+th{
 width: 400px;
 }
+#notice td:FIRST-CHILD+td{ 	/* 헤더에도 적용하면 같이쏠려서 얘한테만 */
+width: 400px;
+text-align:left;
+text-indent:10px
+}
+
 
 #notice td:FIRST-CHILD+td+td,
 #notice th:FIRST-CHILD+th+th{
@@ -296,8 +302,42 @@ border-top: 2px #8cba35 solid;
 #notice th:FIRST-CHILD {
 	background: #f5f5f5;
 }
+/* ----------pager----------- */
+#pager li{
+float: left;
+width:25px;
+height:25px;
+border: 1px solid green;
+text-align: center;
+line-height: 25px; 
+}
+
+
+#pager ul{
+border: 1px solid red;
+/*display: inline-block; /* 자식의 가로세로와 같게 */
+overflow: auto;/* 자식의 높이만 같게 */
+float: left;
+}
+#pager > * {
+float: left; 
+
+}
+#pager p{
+width:25px;
+height:25px;
+border: 1px solid green;
+text-align: center;
+line-height: 25px; 
+}
+
 
 /* -----------위에까지 공지사항 가구---------------- */
+
+
+
+
+
 
 						
 
@@ -464,8 +504,9 @@ border-top: 2px #8cba35 solid;
 		<p>1of 3pages</p>
 		</section>
 	
-		<nav>
-			<h1>페이저</h1>
+		<nav id="pager">
+			<h1 class="hidden">페이저</h1>
+			<p><a href="">이전</a></p>
 			<ul>
 				<li><a href="">1</a></li>
 				<li><a href="">2</a></li>
@@ -473,6 +514,7 @@ border-top: 2px #8cba35 solid;
 				<li><a href="">4</a></li>
 				<li><a href="">5</a></li>
 			</ul>
+			<p><a href="">다음</a></p>
 		</nav>
 		</section> 
 	</main>
@@ -513,6 +555,6 @@ border-top: 2px #8cba35 solid;
 		</section>
 		</div>
 	</footer>
-<aside id="quick-menu">메렁~</aside>
+<!-- <aside id="quick-menu">메렁~</aside> -->
 </body>
 </html>

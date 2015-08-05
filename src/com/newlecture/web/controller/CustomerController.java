@@ -121,7 +121,7 @@ public class CustomerController {
 		}
 		
 		
-		return "redirect:customer.notice";
+		return "redirect:notice";
 	}
 	
 

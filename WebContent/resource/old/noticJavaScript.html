@@ -242,15 +242,59 @@ alert(parseInt(x)+parseInt(y));
  /* var ar=["철수","영희","맹구","동천"];
  for(var i in ar)
 	 alert(ar[i]); */
+	
+	// var m={name:"hong",age:12}; //맵형
 	 
-	 var m={name:"hong",age:12};
-	 
-	 alert(m.name);/*  ==alert(m["name"]);*/
-	 alert(m.age);
- for(var k in m)
-	alert(m[k]); 
+	// alert(m.name);/*  ==alert(m["name"]); 같은거 */
+	 //alert(m.age);
+ 	//for(var k in m)
+	//alert(m[k]);/* []로감싸는이유는 key값을 뽑아내기위해서 */ 
 
+	
+	/* alert((function(a,b) {
+		return a+b;
+	})(3,4));
+ */	
+	//alert(x);
 
+ 	/* function add(a,b){
+ 		alert(arguments[length]);
+ 		return arguments[0]+arguments[1];
+ 	}
+ 	//var sum=add(2,3,4);
+ 	var sum=add(2,3,"hello",3,4,5,6,7,87);
+ 	
+ 	alert(sum); */
+ 	
+ 	
+ 	/* function f1(){
+ 		a=1;
+ 	}
+ 	f1();
+ 	alert(a); */
+ 	
+ 	/* function f1(){
+ 		var a=1;
+ 		f2();
+ 		function f2(){
+ 			var a=2;
+ 			f3();
+ 			function f3(){
+ 				var a=3;
+ 			}
+ 		}
+ 	}
+ 	f1();
+ 	alert(a); */
+ 	/* ----------------함수끝--------------- */
+
+ /* ----------------이벤트 기반의 윈도우 프로그래밍--------------- */
+ 	
+ 	
+ 	
+ 	
+ 
+ 
 </script>
 </head>
 <body>
